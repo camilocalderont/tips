@@ -1,0 +1,42 @@
+.tituloHeader{
+    line-height: normal;
+    font-weight: bold;
+    color: #28446B;
+}
+
+.subTituloHeader{
+    line-height: normal;
+    color: #28446B;
+}
+.rowAlineadoBotton{
+    display: flex;
+    align-items: flex-end;
+} 
+
+.contenedorBusqueda{
+    width: 395px;
+    height: 60px;
+    background-color: #DDD9CE;
+    border-radius: 50px 50px 50px 50px;    
+}
+
+.labelBusqueda{
+    font-family: KlavikaBold;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #28446B;
+    padding: 18px 20px;
+
+}
+
+.campoBusqueda{
+    width: 284px;
+    height: 45px;
+    border-radius: 0px 50px 50px 0px;  
+    margin: 7px 0px;
+    border-color: transparent;
+}
+
+.campoBusqueda:focus-visible{
+    border-color: #28446B;
+}

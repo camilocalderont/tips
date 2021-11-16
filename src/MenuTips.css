@@ -1,0 +1,8 @@
+ul.menuTips{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+}
+ul.menuTips > li{
+    float: left;
+}

@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: KlavikaBold;
+    font-weight: bold;
+    src: url("./assets/fuentes/KlavikaBold-Bold.otf") format("opentype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: klavikalight;
+    src: url("./assets/fuentes/klavikalight-plain.otf") format("opentype");
+}
+
+@font-face {
+    font-family: klavikamedium;
+    src: url("./assets/fuentes/klavikamedium-tf.otf") format("opentype");
+}
+
+@font-face {
+    font-family: klavikaregular;
+    src: url("./assets/fuentes/klavikaregular-tf.otf") format("opentype");
+}
+
+*{
+    font-family: klavikaregular;
+}
+
+.float-right{
+    float: right;
+}
+
+.ml-1em{
+    margin-left: 1em;
+}
+.mr-1em{
+    margin-right: 1em;
+}
+.mt-1em{
+    margin-top:1em;
+}
+.mb-1em{
+    margin-bottom:1em;
+}
+
+.pl-1em{
+    padding-left: 1em;
+}
+.pr-1em{
+    padding-right: 1em;
+}
+.pt-1em{
+    padding-top:1em;
+}
+.pb-1em{
+    padding-bottom:1em;
 }
