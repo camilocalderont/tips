@@ -3,6 +3,7 @@ ul.menuTips{
     margin: 0;
     padding: 0;    
 }
+
 ul.menuTips > li{
     float: left;
 }

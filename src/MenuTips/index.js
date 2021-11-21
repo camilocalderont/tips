@@ -4,7 +4,7 @@ import './MenuTips.css';
 function MenuTips(props){
     let clases = `menuTips ${props.clasesAdicionales}`
     return ( 
-        <ul className={clases}>{props.children}</ul>
+        <ul className={clases} id={props.id}>{props.children}</ul>
     );
 }
 

@@ -1,0 +1,116 @@
+@media (max-width: 2600px ) {
+    a.menuPrincipal{
+        width: 217px;
+
+    } 
+    a.grande{
+        line-height: 1em;
+        margin: 0 4px;
+        font-size: 17pt;
+        height: 60px;  
+        padding: 8px;
+    }
+
+    a.chico{
+        font-size: 17pt;
+        height: 40px;  
+        padding: 4px;
+    }                 
+}
+ 
+@media (max-width: 1600px ) {
+    a.menuPrincipal{
+        width: 180px;
+
+    } 
+    a.grande{
+        line-height: 1em;
+        margin: 0 4px;
+        font-size: 13pt;
+        height: 45px;  
+        padding: 4px;
+    }
+
+    a.chico{
+        font-size: 12pt;
+        height: 36px;  
+        padding: 4px;
+    }    
+             
+} 
+
+@media (max-width: 1440px ) {
+    a.menuPrincipal{
+        width: 170px;
+
+    } 
+    a.grande{
+        line-height: 1em;
+        margin: 0 4px;
+        font-size: 11pt;
+        height: 40px;  
+        padding: 4px;
+    }
+
+    a.chico{
+        font-size: 11pt;
+        height: 36px;  
+        padding: 4px;
+    }    
+             
+}
+
+a.boton{
+    font-family: klavikamedium;  
+    display: block;
+    text-decoration: none;  
+}
+
+a.boton.chico{
+    display: inline;
+}
+
+a.textoCentro, .textoCentro{
+    text-align: center;  
+}
+
+a.textoIzquierda, .textoIzquierda{
+    text-align: left;  
+}
+
+a.textoDerecha, .textoDerecha {
+    text-align: right;  
+}
+
+a.textoJustificada, .textoJustificada{
+    text-align: justify;  
+}
+
+a.borde50{
+    border-radius: 50px 50px 50px 50px;
+}
+
+a.borde10{
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+a.azul{
+    background-color: #28446B;
+    color: #FFFFFF;    
+}
+
+a.azul.active,a.azul:hover{
+    background-color: #EDDB3A;
+    color: #28446B;  
+}
+
+a.amarillo{
+    background-color: #EDDB3A;
+    color: #28446B;   
+}
+
+a.amarillo.active,a.amarillo:hover{
+    background-color: #28446B;
+    color: #FFFFFF;   
+}

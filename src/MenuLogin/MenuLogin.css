@@ -1,0 +1,51 @@
+@media (max-width: 2600px ) {
+
+    a.grande.login{
+        width: 256px; 
+        padding-left: 2em;
+    }
+    a.login > strong{
+        width: 90px;
+        display: block;        
+    } 
+    a.login > img{
+        position: relative;
+        top: -80px;
+        right: -110px;        
+    }           
+}
+
+@media (max-width: 1600px ) {
+    a.grande.login{
+        width: 190px; 
+        padding-left: 1em;
+    }
+    a.login > strong{
+        width: 80px;
+        display: block;        
+    } 
+    a.login > img{
+        position: relative;
+        top: -60px;
+        right: -90px; 
+        height: 90px;        
+    }               
+} 
+
+
+@media (max-width: 1440px ) {
+    a.grande.login{
+        width: 170px; 
+        padding-left: 1em;
+    }
+    a.login > strong{
+        width: 70px;
+        display: block;        
+    } 
+    a.login > img{
+        position: relative;
+        top: -55px;
+        right: -80px; 
+        height: 80px;        
+    }               
+} 

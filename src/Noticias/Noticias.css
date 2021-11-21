@@ -1,0 +1,106 @@
+@media (max-width: 2600px ) {
+
+    .tituloPrincipalNoticias{
+        font-size: 32pt;
+    }
+              
+}
+
+@media (max-width: 1600px ) {
+    .tituloPrincipalNoticias{
+        font-size: 26pt;
+    } 
+    .descripcionNoticia{
+        height: 140px;
+        margin-bottom: 20px;
+        width: 100%;
+        overflow: hidden;        
+    }                 
+} 
+
+
+@media (max-width: 1440px ) {
+    .tituloPrincipalNoticias{
+        font-size: 22pt;
+    }  
+    .descripcionNoticia{
+        height: 140px;
+        width: 100%;
+        overflow: hidden;        
+    }                      
+} 
+
+.tituloPrincipalNoticias{
+    font-family: klavikaBold;
+    color: #28446B;
+    text-align: center;
+}
+
+.tituloPrincipalNoticias span{
+    font-family: klavikalight; 
+    color: #28446B; 
+}
+
+hr.azul{
+    color: #43ABCC;
+    height: 3pt;      
+    opacity: 1;
+}
+hr.azul.pt1{
+    height: 1pt;      
+}
+
+.titularNoticia{    
+    display: block;
+    margin-top: 0px;
+    color: #43ABCC;
+    font-family: MuseoSans700;
+}
+
+.titularNoticia.mt-1em{
+    margin-top: 1em;    
+}
+
+.titularNoticia a{
+    text-decoration: none;
+    color: #43ABCC;
+    font-family: MuseoSans700;    
+}
+
+.titularNoticia span{
+    float: right;
+}
+
+.descripcionNoticia{
+    font-family: klavikaregular; 
+    color: #28446B;     
+    text-align: justify;
+}
+
+.overflow368{
+    max-height: 368px;
+    overflow-y: scroll;
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #28446b1a #28446b38;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #28446b38;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #28446b1a;
+    border-radius: 10px;
+    border: 10px solid #28446ba8;
+  }
+

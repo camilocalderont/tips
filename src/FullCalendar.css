@@ -1,0 +1,129 @@
+@media (max-width: 2600px ) {
+
+    .fc .fc-toolbar-title{
+        font-size: 26pt; 
+    
+    }  
+    a.fc-col-header-cell-cushion{
+        font-size: 14pt;
+    }
+    
+    a.fc-daygrid-day-number{
+        font-size: 16pt;       
+    } 
+    .fc .fc-button .fc-icon,
+    .fc .fc-icon-chevron-left,
+    .fc .fc-icon-chevron-right{
+        font-size: 26pt;
+    }           
+}
+
+@media (max-width: 1600px ) {
+    .fc .fc-toolbar-title{
+        font-size: 22pt; 
+    
+    }  
+    a.fc-col-header-cell-cushion{
+        font-size: 12pt;
+    }
+    
+    a.fc-daygrid-day-number{
+        font-size: 11pt;       
+    } 
+    .fc .fc-button .fc-icon,
+    .fc .fc-icon-chevron-left,
+    .fc .fc-icon-chevron-right{
+        font-size: 18pt;
+    }                
+} 
+
+
+@media (max-width: 1440px ) {
+    .fc .fc-toolbar-title{
+        font-size: 20pt; 
+    
+    }  
+    a.fc-col-header-cell-cushion{
+        font-size: 10pt;
+    }
+    
+    a.fc-daygrid-day-number{
+        font-size: 11pt;       
+    } 
+    .fc .fc-button .fc-icon,
+    .fc .fc-icon-chevron-left,
+    .fc .fc-icon-chevron-right{
+        font-size: 16pt;
+    }                     
+} 
+
+
+
+.fc .fc-toolbar-title{
+    color: #28446B;
+    font-family: MuseoSans900;
+    position: relative;   
+    text-transform: capitalize;
+
+}
+
+.fc .fc-scrollgrid-section-body table,
+.fc-scrollgrid-sync-table,
+table.fc-scrollgrid > tbody tr td{
+    border: 2px solid #EDDB3A;
+}
+
+a.fc-col-header-cell-cushion{
+    color: #43ABCC;
+    font-family: MuseoSans700;
+    text-decoration: none;
+}
+
+a.fc-daygrid-day-number{
+    color: #28446B;  
+    font-family: MuseoSans900;
+    text-decoration: none;      
+}
+
+.fc .fc-daygrid-day.fc-day-today{
+    background-color: #43ABCC;
+}
+
+.fc .fc-daygrid-day.fc-day-today a.fc-daygrid-day-number{
+    color: #FFFFFF;  
+}
+
+.fc-scrollgrid.fc-scrollgrid-liquid,
+.fc-theme-standard td, .fc-theme-standard th{
+    border: 1px solid #fff;
+}
+
+.fc .fc-button .fc-icon,
+.fc .fc-icon-chevron-left,
+.fc .fc-icon-chevron-right{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.fc button.fc-next-button,
+.fc button.fc-prev-button,
+.fc button.fc-next-button:hover,
+.fc button.fc-prev-button:hover
+{
+
+    background: #43ABCC;
+    border: #43ABCC;      
+}
+
+.fc button.fc-next-button:hover,
+.fc button.fc-prev-button:hover{
+    background: transparent;
+    border: transparent;       
+}
+.fc .fc-button:hover .fc-icon{
+    color: #43ABCC;
+}
+
+.fc .fc-button-primary:not(:disabled):active, .fc .fc-button-primary:not(:disabled).fc-button-active{
+    background: transparent;
+    border: transparent; 
+}

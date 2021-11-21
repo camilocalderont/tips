@@ -1,0 +1,84 @@
+/*SEGUNDA FILA*/
+.tituloHeader, .tituloHeader .resaltado{
+    font-family: MuseoSans900;
+    line-height: 1;
+    font-weight: bold;
+    color: #28446B;
+}
+
+
+.subTituloHeader{
+    font-family: MuseoSans700;
+    color: #28446B;
+}
+
+
+
+@media (max-width: 2600px ) {
+    .tituloHeader{
+        font-size: 26pt;
+    }
+    
+    .tituloHeader .resaltado{
+        font-size: 32pt;
+    }
+    .subTituloHeader{
+        font-size: 13pt;
+    }
+    #logoPrincipal{
+        padding-top: 0px;
+    }
+    #contenedorRedes{
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 1600px ) {
+    .tituloHeader{
+        font-size: 18pt;
+    }
+    
+    .tituloHeader .resaltado{
+        font-size: 22pt;
+    }
+    .subTituloHeader{
+        font-size: 10pt;
+    }
+    #logoPrincipal{
+        padding-top: 0px;
+        height: 140px;
+        
+    }
+    #contenedorRedes{
+        padding-top: 50px;
+    }
+}
+
+/*SEGUNDA FILA*/
+
+
+@media (max-width: 2600px ) {
+    #menuContainer{
+        height: 110px;    
+    }     
+}
+
+@media (max-width: 1600px ) {
+    #menuContainer{
+        height: 110px;    
+    }    
+}
+
+
+#menuContainer{
+    display: flex;
+    justify-content:space-between ;   
+}
+
+.contenedorBusqueda{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    background-color: #DDD9CE;
+    border-radius: 50px 50px 50px 50px;    
+}

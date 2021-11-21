@@ -1,0 +1,12 @@
+.resumenPagina p{
+    font-size: 14pt;    
+    font-family: klavikaregular;
+    color: #28446B; 
+    text-align: justify; 
+}
+
+hr.amarillo{
+    color: #EDDB3A;
+    height: 3pt;      
+    opacity: 1;
+}

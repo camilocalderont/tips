@@ -1,0 +1,25 @@
+@media (max-width: 2600px ) {
+    #logoAlcaldiaFooter{
+       height: 100px; 
+    }            
+}
+
+@media (max-width: 1600px ) {
+    #logoAlcaldiaFooter{
+        height: 75px; 
+    }              
+} 
+
+
+@media (max-width: 1440px ) {
+    #logoAlcaldiaFooter{
+        height: 60px; 
+    }               
+} 
+
+
+.contenedorAmbientesDigitales{
+    align-items: center;
+    justify-content: flex-start;
+    justify-items: flex-start;
+}

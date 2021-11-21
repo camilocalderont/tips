@@ -1,0 +1,42 @@
+@media (max-width: 2600px ) {
+
+    .tituloPagina{
+        font-size: 42pt;    
+    }     
+    .tituloPagina::before{
+        top: 15px;
+    }         
+}
+
+@media (max-width: 1600px ) {
+    .tituloPagina{
+        font-size: 34pt;    
+    }  
+    .tituloPagina::before{
+        top: 25px;
+    }                 
+} 
+
+
+@media (max-width: 1440px ) {
+    .tituloPagina{
+        font-size: 30pt;    
+    }
+    .tituloPagina::before{
+        top: 30px;
+    }                      
+} 
+
+
+
+.tituloPagina{
+    font-family: KlavikaBold;
+    color: #28446B; 
+    position: relative;
+    left: -37px;     
+}
+
+.tituloPagina::before{
+    content:url('../assets/imagenes/decorador_titulo.png');
+    position: relative;
+}
