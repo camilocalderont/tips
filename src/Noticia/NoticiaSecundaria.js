@@ -12,7 +12,7 @@ function NoticiaSecundaria(props){
             <Col xs={6} sm={6} xxl={6} xl={6} md={6} lg={6}>
                 <p className="titularNoticia">
                     <a href={noticia.href}>{noticia.titulo}</a>
-                    <span class="fechaNoticia">{noticia.fecha}</span>
+                    <span className="fechaNoticia">{noticia.fecha}</span>
                 </p>
                 <div className="descripcionNoticia">{noticia.descripcion}</div>                            
             </Col>

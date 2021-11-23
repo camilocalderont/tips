@@ -1,20 +1,17 @@
 import React from "react";
 import { Container, Row } from 'react-bootstrap';
-import './ContenidoTips.css';
-import { MenuButton } from "../MenuButton";
-import { Noticias } from "../Noticias";
-import { TituloPagina } from "../TituloPagina";
-import { Bloque } from "../Bloque";
-import FullCalendar from '@fullcalendar/react'; // must go before plugins
-import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
-import '../FullCalendar.css';
+import '../generalPaginas.css';
+import { MenuButton } from "../../MenuButton";
+import { TituloPagina } from "../../TituloPagina";
+import { Bloque } from "../../Bloque";
+import { SeccionParticipacionAlDia } from "../../SeccionParticipacionAlDia";
 const noticias = [
     { 
         id:"1", 
-        titulo:"Ejemplo titular 1", 
+        titulo:"Titular Tips Principal", 
         descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
         href:"#", 
-        imagen:"/imagenes/noticia_1.png",
+        imagen:"/imagenes/noticias/noticia_1.png",
         fecha: "2021-11-21"
     },
     { 
@@ -22,7 +19,7 @@ const noticias = [
         titulo:"Ejemplo titular 2", 
         descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
         href:"#", 
-        imagen:"/imagenes/noticia_2.png",
+        imagen:"/imagenes/noticias/noticia_2.png",
         fecha: "2021-11-20"
     },
     { 
@@ -30,7 +27,7 @@ const noticias = [
         titulo:"Ejemplo titular 3", 
         descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
         href:"#", 
-        imagen:"/imagenes/noticia_2.png",
+        imagen:"/imagenes/noticias/noticia_3.png",
         fecha: "2021-11-20"
     }, 
     { 
@@ -38,7 +35,7 @@ const noticias = [
         titulo:"Ejemplo titular 4", 
         descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
         href:"#", 
-        imagen:"/imagenes/noticia_2.png",
+        imagen:"/imagenes/noticias/noticia_4.png",
         fecha: "2021-11-11"
     }, 
     { 
@@ -46,7 +43,7 @@ const noticias = [
         titulo:"Ejemplo titular 5", 
         descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
         href:"#", 
-        imagen:"/imagenes/noticia_2.png",
+        imagen:"/imagenes/noticias/noticia_5.png",
         fecha: "2021-11-10"
     }, 
     { 
@@ -54,9 +51,14 @@ const noticias = [
         titulo:"Ejemplo titular 6", 
         descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
         href:"#", 
-        imagen:"/imagenes/noticia_2.png",
+        imagen:"/imagenes/noticias/noticia_1.png",
         fecha: "2021-11-09"
     },                    
+];
+
+const eventos = [
+    { title: 'Entrega Tips', date: '2021-11-23' },
+    { title: 'Lanzamiento Tips', date: '2021-11-26' }
 ];
   
 /*
@@ -64,7 +66,7 @@ const noticias = [
     alert(arg.dateStr)
   }
 */
-function ContenidoTips(props){
+function AcercaTips(props){
     return (
         <>
             <Container fluid>
@@ -79,29 +81,21 @@ function ContenidoTips(props){
                             ¿Qué puedo hacer en Tips?                      
                         </MenuButton> 
                     </Bloque> 
-                    <Bloque className="bordeAzul sombra" xs={12} sm={12} xxl={7} xl={7} md={7} lg={7} style={{height:"470px"}} >
-                    </Bloque>         
+                    <Bloque xs={12} sm={12} xxl={7} xl={7} md={7} lg={7}  
+                        className="bordeAzul sombra" 
+                        style={{
+                            background: `url(/imagenes/paginas/acerca-tips.png) center top no-repeat`, 
+                            backgroundSize: 'cover', 
+                            minHeight:"470px"
+                        }} 
+                              
+                    />      
                 </Row>  
                 <hr className="amarillo" />
-                <Row>
-                    <Noticias xs={12} sm={12} xxl={5} xl={5} md={5} lg={5} noticias={noticias} />
-
-                    <Bloque className="bordeAzul sombra pt-40" xs={12} sm={12} xxl={7} xl={7} md={7} lg={7}  >
-                        <FullCalendar
-                            plugins={[ dayGridPlugin  ]}
-                            initialView="dayGridMonth"
-                            locale="es"
-                            events={[
-                                { title: 'Entrega Tips', date: '2021-11-23' },
-                                { title: 'Lanzamiento Tips', date: '2021-11-26' }
-                              ]}                            
-                        />                 
-                    </Bloque>                      
-                </Row>
+                <SeccionParticipacionAlDia noticias={noticias} eventos={eventos} />
             </Container>                       
         </>
         
     );
 }
-
-export {ContenidoTips}
+export {AcercaTips}

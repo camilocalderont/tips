@@ -2,6 +2,13 @@
     #logoFooter{
        height: 105px; 
     }  
+    #logoCuentanosFooter{
+        height: 105px; 
+    } 
+     #logoSaludataFooter{
+         height: 80px;         
+    }  
+    
     ul.menuFooter li a{
         font-size: 12pt;
         letter-spacing: 1pt;        
@@ -15,6 +22,12 @@
     #logoFooter{
         height: 80px; 
     }  
+    #logoCuentanosFooter{
+        height: 80px; 
+    } 
+    #logoSaludataFooter{
+        height: 60px;         
+    }        
     ul.menuFooter li a{
         font-size: 10pt;
         letter-spacing: normal;        
@@ -29,6 +42,12 @@
     #logoFooter{
         height: 70px; 
     }  
+    #logoCuentanosFooter{
+        height: 70px; 
+    }   
+    #logoSaludataFooter{
+        height: 50px;         
+    }         
     ul.menuFooter li a{
         font-size: 9pt;
         letter-spacing: normal;        
@@ -39,6 +58,11 @@
 } 
 
 
+.contenedorAmbientesDigitales{
+    align-items: center;
+    justify-content: flex-start;
+    justify-items: flex-start;
+}
 
 .contenedorFooterEnlaces{
     display: flex;

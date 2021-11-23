@@ -15,17 +15,9 @@ import { MenuSearch } from '../MenuSearch';
 import './Header.css';
 
 
-const menuButtons = [
-  { id:"1", text:["Acerca de","Tips"], href:"#", active: true},
-  { id:"2", text:["Promotores","del Cuidado"], href:"#", active: false},
-  { id:"3", text:["Escuela de","Participación"], href:"#", active: false},
-  { id:"4", text:["Iniciativas","Ciudadanas"], href:"#", active: false},
-  { id:"5", text:["Represetantes de la","Ciudadanía en Salud"], href:"#", active: false}
-];
 
-
-function  Header(){
-    
+function  Header(props){
+    const {menuButtons} = props;
     return (
         <>
             <Container fluid className="header">

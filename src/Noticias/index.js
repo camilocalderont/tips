@@ -5,7 +5,7 @@ import { Noticia } from "../Noticia";
 import './Noticias.css';
 
 function Noticias(props){
-    let noticias = props.noticias;
+    const {noticias}  = props;
     let noticiaPrincipal = noticias.shift();
 
     return (
@@ -18,7 +18,7 @@ function Noticias(props){
                 <Row className="mt-1em overflow368">
                     { noticias.map( noticia => (
 
-                        <Noticia noticia={noticia} principal={false} />                                  
+                        <Noticia key={noticia.id} noticia={noticia} principal={false} />                                  
                     ))}
                 </Row>   
             </Bloque>                            

@@ -10,7 +10,7 @@ function NoticiaPrincipal(props){
                 <Bloque className="sombra" style={{background: `url(${noticia.imagen}) center top no-repeat`, backgroundSize: 'cover'}} />
                 <p className="titularNoticia mt-1em">
                     <a href={noticia.href}>{noticia.titulo}</a>
-                    <span class="fechaNoticia">{noticia.fecha}</span>
+                    <span className="fechaNoticia">{noticia.fecha}</span>
                 </p>
                 <div className="descripcionNoticia">{noticia.descripcion}</div>
             </Col>  

@@ -22,11 +22,9 @@ function  Footer(){
         <>
             <Container fluid id="footer" >
                 <Row>
-                    <Col xs={12} sm={12} xxl={6} xl={6} md={6} lg={6}  >                        
+                    <Col xs={12} sm={12} xxl={9} xl={9} md={9} lg={9}  >                        
                         <FooterEnlaces enlaces={menuFooter} />
-                    </Col>
-                    <Col xs={12} sm={12} xxl={3} xl={3} md={3} lg={3}  >
-                        <FooterAmbientesDigitales />                                                                
+                        {/*<FooterAmbientesDigitales />   */}
                     </Col>
                     <Col xs={12} sm={12} xxl={3} xl={3} md={3} lg={3}  >
                         <FooterLogoEntidad />                                                                    
