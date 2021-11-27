@@ -17,13 +17,15 @@ import './Header.css';
 
 
 function  Header(props){
-    const {menuButtons} = props;
+    const {menuButtons, setMenuEstados } = props;
     return (
         <>
             <Container fluid className="header">
                 <Row className="rowAlineadoCenter">
                     <Col md={2} lg={2} xl={2} xxl={2}>
-                        <img src={LogoPrincipalTips} alt="Logo Principal Estratégia TIPS" id="logoPrincipal" />
+                        <a href="/" title="Ir al inicio">
+                            <img src={LogoPrincipalTips} alt="Logo Principal Estratégia TIPS" id="logoPrincipal" />
+                        </a>
                     </Col> 
                     <Col md={7} lg={7} xl={7} xxl={7}>
                         <h1 className="tituloHeader">
@@ -47,8 +49,16 @@ function  Header(props){
                 <Row className="mt-1em">
                     <Col xs={12} sm={12} xxl={12} xl={12} md={12} lg={12} id="menuContainer">
                         <MenuTips clasesAdicionales="contenedorMenu">
-                            { menuButtons.map( menu => (
-                                <MenuItem key={menu.id} text={menu.text} href={menu.href} active={menu.active} clasesAdicionales="grande azul menuPrincipal borde50 textoCentro" />
+                            { menuButtons.map( menuItem => (
+ 
+                                <MenuItem 
+                                    key={menuItem.id}
+                                    menu={menuItem}  
+                                    menuButtons={menuButtons}
+                                    setMenuEstados={setMenuEstados}
+                                    clasesAdicionales="grande azul menuPrincipal borde50 textoCentro" 
+                                />
+                                
                             ))}
                         </MenuTips> 
                         <MenuSearch />

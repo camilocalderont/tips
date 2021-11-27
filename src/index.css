@@ -76,3 +76,10 @@
 .pb-1em{
     padding-bottom:1em;
 }
+iframe{
+    border-radius: 10px 10px 10px 10px;
+}
+
+button.ytp-large-play-button.ytp-button{
+    
+}

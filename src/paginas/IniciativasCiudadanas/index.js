@@ -1,59 +1,33 @@
 import React from "react";
 import { Container, Row } from 'react-bootstrap';
 import '../generalPaginas.css';
-import { MenuButton } from "../../MenuButton";
+import { TipsButton } from "../../TipsButton";
 import { TituloPagina } from "../../TituloPagina";
 import { Bloque } from "../../Bloque";
 import { SeccionParticipacionAlDia } from "../../SeccionParticipacionAlDia";
 const noticias = [
     { 
         id:"1", 
-        titulo:"Noticia Principal", 
-        descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
+        titulo:"¡Semilla fuerte crece libre en donde sea!", 
+        descripcion:"Luego de hacer nuestra paca biodigestora el pasado 11 de julio, nos reunimos en torno a la semilla. Recordamos los alimentos de nuestros desayunos y pensamos sobre las latitudes de donde provenían y los saberes que se asociaban a nuestros platos más cotidianos. Desde allí replanteamos nuestros hábitos de consumo a partir de la comprensión de la semilla como piedra angular de la subsistencia y la autonomía de los pueblos. Porque una patria nunca va a ser soberana si no es capaz de proveerse sus alimentos.", 
         href:"#", 
-        imagen:"/imagenes/noticia_1.png",
+        imagen:"/imagenes/noticias/ParticipacionAlDia/Foto_7.png",
         fecha: "2021-11-21"
     },
     { 
         id:"2", 
-        titulo:"Ejemplo titular 2", 
+        titulo:"Iniciativas titular 2", 
         descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
         href:"#", 
-        imagen:"/imagenes/noticia_2.png",
+        imagen:"/imagenes/noticias/noticia_1.png",
         fecha: "2021-11-20"
-    },
-    { 
-        id:"3", 
-        titulo:"Ejemplo titular 3", 
-        descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
-        href:"#", 
-        imagen:"/imagenes/noticia_2.png",
-        fecha: "2021-11-20"
-    }, 
-    { 
-        id:"4", 
-        titulo:"Ejemplo titular 4", 
-        descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
-        href:"#", 
-        imagen:"/imagenes/noticia_2.png",
-        fecha: "2021-11-11"
-    }, 
-    { 
-        id:"5", 
-        titulo:"Ejemplo titular 5", 
-        descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
-        href:"#", 
-        imagen:"/imagenes/noticia_2.png",
-        fecha: "2021-11-10"
-    }, 
-    { 
-        id:"6", 
-        titulo:"Ejemplo titular 6", 
-        descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
-        href:"#", 
-        imagen:"/imagenes/noticia_2.png",
-        fecha: "2021-11-09"
-    },                    
+    }                    
+];
+
+const eventos = [
+    { title: 'Evento Iniciativa Salud', date: '2021-11-13' },
+    { title: 'Evento Iniciativa Prevención', date: '2021-11-20' },
+    { title: 'Evento Iniciativa LGTBI', date: '2021-12-03' }
 ];
   
 /*
@@ -61,29 +35,35 @@ const noticias = [
     alert(arg.dateStr)
   }
 */
-function AcercaTips(props){
+function IniciativasCiudadanas(props){
     return (
         <>
             <Container fluid>
                 <Row>
                     <Bloque className="" xs={12} sm={12} xxl={5} xl={5} md={5} lg={5}>
-                        <TituloPagina texto="¿Qué es TIPS?" />
+                        <TituloPagina texto="¿Qué son y cómo funcionan las iniciativas ciudadanas?" />
                             <div className="resumenPagina">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum at nunc sit amet malesuada. Suspendisse potenti. Aliquam erat volutpat. Mauris vulputate massa nec ipsum eleifend, nec commodo mi congue. In finibus lacus eu blandit congue. Sed elementum tincidunt commodo. Aenean risus felis, ornare quis elementum in, sollicitudin in enim. Integer convallis ut nisl id cursus. Proin tortor turpis, volutpat id aliquet ut, venenatis ut nunc.</p>
-                                <p>Etiam a metus commodo, ultricies metus in, luctus lectus. Fusce sed massa sed nulla rhoncus hendrerit. Cras eget diam sed sapien vulputate pulvinar. In hac habitasse platea dictumst. Mauris sagittis felis eu augue ornare luctus. Mauris rutrum tempus felis vitae hendrerit. In mollis ornare nisl, eget porta elit dictum a. Suspendisse potenti. Mauris eget imperdiet libero. Nulla et suscipit tortor.</p>                    
+                                <p>¿Tienes alguna idea o proyecto para mejorar la salud en tu comunidad o en tu ciudad, pero no sabes cómo empezar? Para eso nos encontramos con cientos de personas en las localidades de Bogotá para identificar los principales retos en salud, y partir de ellos, en los laboratorios TIPS, estamos co-creando y promoviendo proyectos que respondan a esas problemáticas, y que den como resultado acciones colectivas para construir una agenda social del cuidado.</p>
                             </div>
-                        <MenuButton href="#" className="boton chico amarillo borde10">
-                            ¿Qué puedo hacer en Tips?                      
-                        </MenuButton> 
+                        <TipsButton href="#" className="boton chico amarillo borde10">
+                            Banco de iniciativas                     
+                        </TipsButton> 
                     </Bloque> 
-                    <Bloque className="bordeAzul sombra" xs={12} sm={12} xxl={7} xl={7} md={7} lg={7} style={{height:"470px"}} >
-                    </Bloque>         
+                    <Bloque xs={12} sm={12} xxl={7} xl={7} md={7} lg={7}  
+                        className="" 
+                        style={{
+                            background: `url(/imagenes/paginas/iniciativas-ciudadanas.png) center top no-repeat`, 
+                            backgroundSize: 'cover', 
+                            minHeight:"620px"
+                        }} 
+                              
+                    />         
                 </Row>  
                 <hr className="amarillo" />
-                <SeccionParticipacionAlDia noticias={noticias} />
+                <SeccionParticipacionAlDia noticias={noticias} eventos={eventos} />
             </Container>                       
         </>
         
     );
 }
-export {AcercaTips}
+export {IniciativasCiudadanas}

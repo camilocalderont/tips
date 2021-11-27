@@ -1,0 +1,22 @@
+input.form-control{
+    border: 2px solid #28446B;
+    border-radius: 10px 10px 10px 10px;
+}
+label.form-label{
+    color: #28446B;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(168, 168, 168) !important;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(168, 168, 168) !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(168, 168, 168) !important;
+}

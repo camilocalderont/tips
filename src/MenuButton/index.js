@@ -1,13 +1,25 @@
 import React from 'react';
-import './MenuButton.css';
+
 
 function MenuButton(props){
-    const onClickButton = () =>{
-        //alert('Aqui entra alert');
-    };
-    let clases = `boton ${props.className}`;   
+    const { menu, menuButtons, className, setMenuEstados } = props;
+    const onClickButton = (event) =>{
+
+        let estaActivo = menu.active;
+        const menuIndex = menuButtons.findIndex(menuItem => menuItem.id === menu.id);
+        //duplico el menu y convierto el estado en falso
+        const nuevoMenu = menuButtons.map(function(element) {
+            element.active = false;
+            return element;
+        });
+        //hago toogle al active y guardo el estado y la variable de localStorage
+        nuevoMenu[menuIndex].active = !estaActivo;
+        setMenuEstados(nuevoMenu);
+        localStorage.setItem('MENUS_V1',JSON.stringify(nuevoMenu));
+    }; 
+    let clases = `boton ${className}`;   
     return (
-        <a href={props.href} className={clases} onClick={onClickButton}>
+        <a href={menu.href} className={clases}  onClick={onClickButton}>
             { props.children }
         </a>
     );

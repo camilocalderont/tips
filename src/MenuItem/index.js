@@ -3,12 +3,17 @@ import {MenuButton} from "../MenuButton";
 import './MenuItem.css';
 
 function MenuItem(props){
-    let clases = `${props.clasesAdicionales} ${ props.active ? 'active' : '' }`;
-
+    const { menu, menuButtons, setMenuEstados, clasesAdicionales  } = props;
+    let clases = `${clasesAdicionales} ${menu.active ? 'active' : '' }`;
     return (
         <li className="menuItem">
-            <MenuButton href={props.href} className={clases}>
-                { props.text[0] } <br/> { props.text[1] }
+            <MenuButton 
+                menu={menu}   
+                menuButtons={menuButtons}   
+                setMenuEstados={setMenuEstados}           
+                className={clases}
+                >
+                { menu.text[0] } <br/> { menu.text[1] }
             </MenuButton>
         </li>
     );

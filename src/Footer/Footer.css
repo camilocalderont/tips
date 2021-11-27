@@ -7,4 +7,116 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+}
+
+@media (max-width: 2600px ) {
+    #logoAlcaldiaFooter{
+       height: 100px; 
+    } 
+    #logoFooter{
+        height: 130px; 
+     }  
+     #logoCuentanosFooter{
+         height: 105px; 
+         margin: 0 60px;
+     } 
+      #logoSaludataFooter{
+          height: 80px;         
+     }  
+     
+     ul.menuFooter li a{
+         font-size: 12pt;
+         letter-spacing: 1pt;        
+     } 
+     #tituloFooter{
+         font-size: 16pt;
+     }                      
+}
+
+@media (max-width: 1600px ) {
+    #logoAlcaldiaFooter{
+        height: 75px; 
+    }   
+    #logoFooter{
+        height: 115px; 
+    }  
+    #logoCuentanosFooter{
+        height: 80px; 
+        margin: 0 50px;
+    } 
+    #logoSaludataFooter{
+        height: 60px;         
+    }        
+    ul.menuFooter li a{
+        font-size: 10pt;
+        letter-spacing: normal;        
+    }
+    #tituloFooter{
+        font-size: 13pt;
+    }                  
+} 
+
+
+@media (max-width: 1440px ) {
+    #logoAlcaldiaFooter{
+        height: 60px; 
+    }  
+    #logoFooter{
+        height: 110px; 
+    }  
+    #logoCuentanosFooter{
+        height: 70px; 
+        margin: 0 40px;
+    }   
+    #logoSaludataFooter{
+        height: 50px;         
+    }         
+    ul.menuFooter li a{
+        font-size: 9pt;
+        letter-spacing: normal;        
+    }  
+    #tituloFooter{
+        font-size: 11pt;      
+    }                      
+} 
+
+
+
+.contenedorAmbientesDigitales{
+    align-items: center;
+    justify-content: flex-start;
+    justify-items: flex-start;
+}
+
+.contenedorFooterEnlaces{
+    display: flex;
+    align-items: center;
+}
+
+#tituloFooter{
+    font-family: klavikamedium;
+    font-weight: bold;
+    color: #28446B;    
+    margin-top: 10px;      
+}
+
+ul.menuFooter {    
+    list-style: none;
+}
+
+ul.menuFooter li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color:#43ABCC; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+ul.menuFooter li a{
+    text-decoration: none;
+    font-family: klavikalight;
+    color: #28446B;
+
 }

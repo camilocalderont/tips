@@ -1,59 +1,35 @@
 import React from "react";
 import { Container, Row } from 'react-bootstrap';
 import '../generalPaginas.css';
-import { MenuButton } from "../../MenuButton";
+import { TipsButton } from "../../TipsButton";
 import { TituloPagina } from "../../TituloPagina";
 import { Bloque } from "../../Bloque";
 import { SeccionParticipacionAlDia } from "../../SeccionParticipacionAlDia";
 const noticias = [
     { 
         id:"1", 
-        titulo:"Noticia Principal Promotores", 
-        descripcion:"Esta es una noticia de promotores del cuidado, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
+        titulo:"¿Y después de la pandemia qué?", 
+        descripcion:"Es común escuchar personas que quisieran borrar el año 2020 de sus vidas, dicen que fue un tiempo perdido y añoran el retorno a la normalidad, incluso algunos hacen planes para “cuando pase la pandemia...”. Pero a un año de que el COVID-19 llegara a Colombia, vale la pena recordar que en esa “normalidad” añorada ya existían varias afectaciones a la salud humana que merecían atención y una alerta, porque también mataban a miles de personas al año. Por ejemplo, según la Secretaría Distrital de Salud, en el año 2019 más de 2.000 personas murieron por enfermedades producidas por la mala calidad de aire de la ciudad, de acuerdo con el periódico El Espectador.", 
         href:"#", 
-        imagen:"/imagenes/noticias/noticia_5.png",
+        imagen:"/imagenes/noticias/ParticipacionAlDia/Foto_1.jpg",
         fecha: "2021-11-21"
     },
     { 
         id:"2", 
-        titulo:"Promotores titular 2", 
-        descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
+        titulo:"Nuestro saber ancestral: una política de cuidado", 
+        descripcion:"“El plan de vacunación para la comunidad afro en Bogotá es urgente porque gran parte de la población es víctima del conflicto armado y vive en condiciones de marginalidad y hacinamiento, lo que aumenta el índice de contagio. Además, muchas personas no tienen plan de salud como el resto de la población en Bogotá y, por otro lado, una de las enfermedades que caracteriza a nuestra población es la presión arterial", 
         href:"#", 
-        imagen:"/imagenes/noticias/noticia_4.png",
+        imagen:"/imagenes/noticias/ParticipacionAlDia/Foto_3.jpg",
         fecha: "2021-11-20"
     },
     { 
         id:"3", 
-        titulo:"Promotores titular 3", 
-        descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
+        titulo:"Daños ambientales y su efecto en la salud de todas y todos", 
+        descripcion:"Bogotá es parte de un ecosistema montañoso diverso que cuenta con cerca de 20 parques ecológicos, 40 áreas forestales y 15 humedales que previenen inundaciones y suministran oxígeno a más de 600 especies de animales y a más de 8 millones de seres humanos que cada vez son más conscientes de la conexión que existe entre su salud y la del planeta.", 
         href:"#", 
-        imagen:"/imagenes/noticias/noticia_3.png",
+        imagen:"/imagenes/noticias/ParticipacionAlDia/Foto_4.jpg",
         fecha: "2021-11-20"
-    }, 
-    { 
-        id:"4", 
-        titulo:"Promotores titular 4", 
-        descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
-        href:"#", 
-        imagen:"/imagenes/noticias/noticia_2.png",
-        fecha: "2021-11-11"
-    }, 
-    { 
-        id:"5", 
-        titulo:"Promotores titular 5", 
-        descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
-        href:"#", 
-        imagen:"/imagenes/noticias/noticia_1.png",
-        fecha: "2021-11-10"
-    }, 
-    { 
-        id:"6", 
-        titulo:"Promotores titular 6", 
-        descripcion:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper in nulla ut accumsan. Aliquam commodo lectus non nulla varius, vitae porttitor odio dapibus. Nunc posuere enim sem, eget efficitur lectus condimentum in.", 
-        href:"#", 
-        imagen:"/imagenes/noticias/noticia_4.png",
-        fecha: "2021-11-09"
-    },                    
+    }                 
 ];
 
 const eventos = [
@@ -75,22 +51,20 @@ function PromotoresDelCuidado(props){
                     <Bloque className="" xs={12} sm={12} xxl={5} xl={5} md={5} lg={5}>
                         <TituloPagina texto="¿Qué es un/a Promotor/a del Cuidado?" />
                             <div className="resumenPagina">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum at nunc sit amet malesuada. Suspendisse potenti. Aliquam erat volutpat. Mauris vulputate massa nec ipsum eleifend, nec commodo mi congue. In finibus lacus eu blandit congue. Sed elementum tincidunt commodo. Aenean risus felis, ornare quis elementum in, sollicitudin in enim. Integer convallis ut nisl id cursus. Proin tortor turpis, volutpat id aliquet ut, venenatis ut nunc.</p>
-                                <p>Etiam a metus commodo, ultricies metus in, luctus lectus. Fusce sed massa sed nulla rhoncus hendrerit. Cras eget diam sed sapien vulputate pulvinar. In hac habitasse platea dictumst. Mauris sagittis felis eu augue ornare luctus. Mauris rutrum tempus felis vitae hendrerit. In mollis ornare nisl, eget porta elit dictum a. Suspendisse potenti. Mauris eget imperdiet libero. Nulla et suscipit tortor.</p>                    
+                                <p>Cuando cuidas a un ser querido, a tu perro o a tu gato, o el lugar en el que vives, y además lo haces con todo tu compromiso, eres un/a Promotor del Cuidado. Eso quiere decir que puedes hacer parte de la apuesta de la Secretaría Distrital de Salud que busca promover, intercambiar y aprender sobre las prácticas de cuidado que realizamos a diario y en diferentes espacios. ¡Así también construimos una Bogotá cuidadora!</p>
                             </div>
-                        <MenuButton href="#" className="boton chico amarillo borde10">
+                        <TipsButton href="#" className="boton chico amarillo borde10">
                             ¿Quiero ser un/a Promotor?                      
-                        </MenuButton> 
+                        </TipsButton> 
                     </Bloque> 
                     <Bloque xs={12} sm={12} xxl={7} xl={7} md={7} lg={7}  
-                        className="bordeAzul sombra" 
+                        className="bordeAzul p-0 sombra" 
                         style={{
-                            background: `url(/imagenes/paginas/promotores-del-cuidado.png) center top no-repeat`, 
-                            backgroundSize: 'cover', 
-                            minHeight:"470px"
-                        }} 
-                              
-                    />         
+                            maxHeight:"400px"
+                        }}                               
+                    >
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/w9_g49O6_V0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>                        
+                    </Bloque>         
                 </Row>  
                 <hr className="amarillo" />
                 <SeccionParticipacionAlDia noticias={noticias} eventos={eventos} />

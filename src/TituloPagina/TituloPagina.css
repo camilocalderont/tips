@@ -1,7 +1,7 @@
 @media (max-width: 2600px ) {
 
     .tituloPagina{
-        font-size: 42pt;    
+        font-size: 34pt;    
     }     
     .tituloPagina::before{
         top: 15px;
@@ -10,7 +10,7 @@
 
 @media (max-width: 1600px ) {
     .tituloPagina{
-        font-size: 34pt;    
+        font-size: 26pt;    
     }  
     .tituloPagina::before{
         top: 25px;
@@ -20,7 +20,7 @@
 
 @media (max-width: 1440px ) {
     .tituloPagina{
-        font-size: 30pt;    
+        font-size: 22pt;    
     }
     .tituloPagina::before{
         top: 30px;

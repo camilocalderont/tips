@@ -5,6 +5,10 @@
     border-radius: 10px 10px 10px 10px;  
     
 }
+.contenedorBloque.p-0{
+    padding: 0px;   
+}
+
 
 .contenedorBloque.pt-40{
     padding-top: 40px;
