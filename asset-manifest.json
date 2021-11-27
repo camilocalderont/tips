@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/tips/static/css/main.5cae351b.chunk.css",
+    "main.js": "/tips/static/js/main.7eb988ed.chunk.js",
+    "main.js.map": "/tips/static/js/main.7eb988ed.chunk.js.map",
+    "runtime-main.js": "/tips/static/js/runtime-main.2127389d.js",
+    "runtime-main.js.map": "/tips/static/js/runtime-main.2127389d.js.map",
+    "static/css/2.75ec0054.chunk.css": "/tips/static/css/2.75ec0054.chunk.css",
+    "static/js/2.0ea42ce9.chunk.js": "/tips/static/js/2.0ea42ce9.chunk.js",
+    "static/js/2.0ea42ce9.chunk.js.map": "/tips/static/js/2.0ea42ce9.chunk.js.map",
+    "index.html": "/tips/index.html",
+    "static/css/2.75ec0054.chunk.css.map": "/tips/static/css/2.75ec0054.chunk.css.map",
+    "static/css/main.5cae351b.chunk.css.map": "/tips/static/css/main.5cae351b.chunk.css.map",
+    "static/js/2.0ea42ce9.chunk.js.LICENSE.txt": "/tips/static/js/2.0ea42ce9.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/tips/static/media/klavikaregular-tf.540b827c.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2127389d.js",
+    "static/css/2.75ec0054.chunk.css",
+    "static/js/2.0ea42ce9.chunk.js",
+    "static/css/main.5cae351b.chunk.css",
+    "static/js/main.7eb988ed.chunk.js"
+  ]
+}
