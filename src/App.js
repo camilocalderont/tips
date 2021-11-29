@@ -42,14 +42,14 @@ function App(props) {
       <Body> 
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<AcercaTips />}>
-            <Route path="acerca-de-tips" element={<AcercaTips />} />      
+
+              <Route path="acerca-de-tips" element={<AcercaTips />} />      
               <Route path="promotores-del-cuidado" element={<PromotoresDelCuidado />} /> 
               <Route path="escuela-de-participacion" element={<EscuelaDeParticipacion />} />
               <Route path="iniciativas-ciudadanas" element={<IniciativasCiudadanas />} />
               <Route path="representantes-de-la-ciudadania-en-salud" element={<RepresentantesDeLaSalud />} />            
               <Route path="quiero-participar" element={<QuieroParticipar />} />     
-            </Route>    
+
           </Routes>  
         </BrowserRouter>  
       </Body>

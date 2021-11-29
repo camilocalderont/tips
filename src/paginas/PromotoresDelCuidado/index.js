@@ -29,13 +29,58 @@ const noticias = [
         href:"#", 
         imagen:"/imagenes/noticias/ParticipacionAlDia/Foto_4.jpg",
         fecha: "2021-11-20"
-    }                 
+    },
+    //acerca de tips
+    { 
+        id:"4", 
+        titulo:"La salud mental desde cuatro visiones étnicas", 
+        descripcion:"Leonardo Fuentes, Sabedor afro para Teusaquillo y Engativá: “El concepto más importante es el nosotros: El somos porque tú eres, somos porque otros fueron. Desde ahí le decimos a cada miembro de la comunidad que son importantes y eso hace que la gente se sienta reconocida y que pertenece a algo, así la persona es productiva para la comunidad, pero sobre todo para ella misma. Sin importar si eres blanco o negro, queremos que el Kilombo sea un espacio diverso y de intercambio de ideas que construyen el tejido que somos. El mejor calmante para el alma es la palabra y la escucha sincera. También tenemos jabones y otras medicinas con plantas, para que las personas se conecten con la naturaleza. Desde la visión Yoruba, al arrancar una planta hablamos con ella y le pedimos permiso. Para la salud mental recomiendo mucho el jengibre, la albahaca y la menta, que ayudan a encontrar la calma”", 
+        href:"#", 
+        imagen:"/imagenes/noticias/ParticipacionAlDia/Foto_8.jpg",
+        fecha: "2021-11-21"
+    },  
+    //escuela de participacion
+    { 
+        id:"5", 
+        titulo:"Nace la primera veeduría cannábica en Colombia", 
+        descripcion:"“Regulación desde abajo, regulación en marcha”, es el objeto principal de la primera veeduría en Colombia sobre política pública de sustancias psicoactivas, con énfasis en cannabis (Resolución PDCPL 21-074). Un total de 30 personas, entre las que se encuentran médicos, abogados, agrónomos, comerciantes, biólogos, líderes sociales, madres y padres de familia, quieren demostrarle al Estado que es posible sacar el cannabis del contexto de la calle, el narcotráfico y la inseguridad y, además, reducir los riesgos para la salud.", 
+        href:"#", 
+        imagen:"/imagenes/noticias/ParticipacionAlDia/Foto_9.jpg",
+        fecha: "2021-11-21"
+    },  
+    //iniciativas ciudadanas
+    { 
+        id:"6", 
+        titulo:"¡Semilla fuerte crece libre en donde sea!", 
+        descripcion:"Luego de hacer nuestra paca biodigestora el pasado 11 de julio, nos reunimos en torno a la semilla. Recordamos los alimentos de nuestros desayunos y pensamos sobre las latitudes de donde provenían y los saberes que se asociaban a nuestros platos más cotidianos. Desde allí replanteamos nuestros hábitos de consumo a partir de la comprensión de la semilla como piedra angular de la subsistencia y la autonomía de los pueblos. Porque una patria nunca va a ser soberana si no es capaz de proveerse sus alimentos.", 
+        href:"#", 
+        imagen:"/imagenes/noticias/ParticipacionAlDia/Foto_7.png",
+        fecha: "2021-11-21"
+    },  
+    //representantes
+    { 
+        id:"7", 
+        titulo:"¡A vigilar las vacunas!", 
+        descripcion:"Los procesos de vacunación en el mundo están bajo la lupa pública. Mientras medios de comunicación en Brasil han denunciado a figuras políticas locales cuyos familiares se han saltado la fila para vacunarse contra el COVID-19, en Perú, Argentina y Ecuador cuatro ministros han renunciado o están sien-do investigados por casos de corrupción en los procesos de vacunación. Previniendo este tipo de situaciones, la ciudadanía de Bogotá se organizó y decidió ponerle la lupa a las vacunas bajo el lema “¡todos a cuidarnos y a cuidar las vacunas!”. Se trata de la veeduría ciudadana que vigila el Plan de Vacunación de Bogotá. Desde allí más de 60 ciudadanas y ciudadanos hacen seguimiento, vigilancia y control al proceso de vacunación.", 
+        href:"#", 
+        imagen:"/imagenes/noticias/ParticipacionAlDia/Foto_2.jpg",
+        fecha: "2021-11-21"
+    },
+    { 
+        id:"8", 
+        titulo:"Centro de Salud Manuela Beltrán: Un sueño que se hace realidad", 
+        descripcion:"“Estoy muy satisfecha al ver que lo que ha sido durante mucho tiempo un sueño hoy es una realidad gracias a la persistencia de la comunidad”, expresa Carmen Fernández, vocera de la veeduría al Centro de Salud Manuela Beltrán. Después de 20 años se materializa el centro de salud para esta zona de la localidad de Ciudad Bolívar, con el que se espera atender a más de 40 mil personas.", 
+        href:"#", 
+        imagen:"/imagenes/noticias/ParticipacionAlDia/Foto_6.png",
+        fecha: "2021-11-20"
+    }                            
 ];
 
 const eventos = [
     { title: 'Reunión Promotores', date: '2021-11-15' },
     { title: 'Reunión 2 Promotores', date: '2021-11-30' },
-    { title: 'Reunión 3 Promotores', date: '2021-12-15' }
+    { title: 'Reunión 3 Promotores', date: '2021-12-15' },
+    { title: 'Rendición Cuentas', date: '2021-12-06' }      
 ];
   
 /*

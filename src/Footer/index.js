@@ -24,19 +24,27 @@ function  Footer(){
         <>
             <Container fluid id="footer" >
                 <Row>
-                    <Col xs={12} sm={12} xxl={4} xl={4} md={4} lg={4}  >
+                    <Col xs={12} sm={12} xxl={1} xl={1} md={1} lg={1}  >
                         <a href="/" title="Ir al inicio">
                             <img src={LogoFooterTips} alt="Logo Footer Ambiente Digital de la Estratégia TIPS" id="logoFooter" />   
                         </a>                           
                     </Col> 
+                    <Col xs={12} sm={12} xxl={4} xl={4} md={4} lg={4}  >
+                        <h2 id="tituloFooter">
+                                    Territorios de Innovación y <br />
+                                    Participación en Salud
+                        </h2>
+                        <p>Subsecretaría de Gestión Territorial, Participación y Servicio a la Ciudadanía<br />Secretaría Distrital de Salud</p>                         
+                    </Col>                     
                     {/*
                     <Col xs={12} sm={12} xxl={9} xl={9} md={9} lg={9}>
                         <Row>
                             <Col>
                                 <h2 id="tituloFooter">
-                                    Dirección de Participación Social <br />
-                                    Gestión Territorial y Transectorialidad
+                                    Territorios de Innovación y <br />
+                                    Participación en Salud
                                 </h2>
+                                <p>Subsecretaría de Gestión Territorial, Participación y Servicio a la Ciudadanía<br />Secretaría Distrital de Salud</p>
                             </Col>                        
                         </Row> 
                         <Row>
@@ -53,7 +61,7 @@ function  Footer(){
                         </Row>                                        
                     </Col>
                     */}                    
-                    <Col xs={12} sm={12} xxl={5} xl={5} md={5} lg={5}  >    
+                    <Col xs={12} sm={12} xxl={4} xl={4} md={4} lg={4}  >    
                         <img src={LogoCuentanosFooter} alt="Logo Footer Ambiente Digital de la Estratégia Cuentanos Bogotá" className="logosAmbientesDigitales" id="logoCuentanosFooter" />                
                         <img src={LogoSaludataFooter} alt="Logo Footer Ambiente Digital de la Estratégia SaluData" className="logosAmbientesDigitales" id="logoSaludataFooter" />                                 
                     </Col>                     

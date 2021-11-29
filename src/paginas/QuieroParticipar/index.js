@@ -20,7 +20,7 @@ function QuieroParticipar(props){
                     <Bloque className="" xs={12} sm={12} xxl={5} xl={5} md={5} lg={5}>
                         <TituloPagina texto="Quiero Participar" />
                             <div className="resumenPagina">
-                                <p><strong>Crea tu perfil de usuario para interactuar en el ambiente digital</strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate</p>
+                                <p><strong>Crea tu perfil de usuario para interactuar en el ambiente digital</strong></p>
                             </div>
                         <TipsButton href="#" className="boton chico amarillo borde10">
                            #YoParticipoEnSalud                 
