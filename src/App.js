@@ -49,7 +49,7 @@ function App(props) {
               <Route path="iniciativas-ciudadanas" element={<IniciativasCiudadanas />} />
               <Route path="representantes-de-la-ciudadania-en-salud" element={<RepresentantesDeLaSalud />} />            
               <Route path="quiero-participar" element={<QuieroParticipar />} />     
-
+              <Route path="/" element={<AcercaTips />} /> 
           </Routes>  
         </BrowserRouter>  
       </Body>

@@ -39,10 +39,10 @@ function  Header(props){
                     </Col>
                     <Col md={3} lg={3} xl={3} xxl={3}>
                         <MenuTips clasesAdicionales="float-right" id="contenedorRedes"> 
-                            <li><a target="_blank" rel="noreferrer" href="https://instagram.com"><img src={IconoInstagram} alt="Logo Instagram - Estratégia TIPS" width="35px"  /></a></li>
-                            <li><a target="_blank" rel="noreferrer" href="https://facebook.com"><img src={IconoFacebook} alt="Logo Facebook - Estratégia TIPS" width="35px"  /></a></li>
-                            <li><a target="_blank" rel="noreferrer" href="https://twitter.com"><img src={IconoTwitter} alt="Logo Twitter - Estratégia TIPS" width="35px"  /></a></li>
-                            <li><a target="_blank" rel="noreferrer" href="https://youtube.com"><img src={IconoYoutube} alt="Logo Youtube - Estratégia TIPS" width="35px"  /></a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://www.instagram.com/secretariasaludbogota"><img src={IconoInstagram} alt="Logo Instagram - Estratégia TIPS" width="35px"  /></a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://www.facebook.com/secretariadistritaldesalud"><img src={IconoFacebook} alt="Logo Facebook - Estratégia TIPS" width="35px"  /></a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://twitter.com/SectorSalud"><img src={IconoTwitter} alt="Logo Twitter - Estratégia TIPS" width="35px"  /></a></li>
+                            <li><a target="_blank" rel="noreferrer" href="https://www.youtube.com/c/Secretar%C3%ADaDistritaldeSalud"><img src={IconoYoutube} alt="Logo Youtube - Estratégia TIPS" width="35px"  /></a></li>
                         </MenuTips>
                     </Col>
                 </Row>
